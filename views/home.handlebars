@@ -1,0 +1,13 @@
+<h1>This is the message board. Hello!</h1>
+
+<ul>
+    {{#each messages}}
+    <li>{{this.content}}</li>
+    {{/each}}
+</ul>
+
+<a href='/register'>register</a> <a href="/login">login</a>
+<form action="/message" method="POST">
+    <input type="text" placeholder="Enter your message" name="message"/>
+    <button type="submit">Send</button>
+</form>
